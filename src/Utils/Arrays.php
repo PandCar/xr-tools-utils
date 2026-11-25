@@ -522,7 +522,7 @@ class Arrays
 			return [];
 		}
 
-		$arr = unserialize($serialize);
+		$arr = unserialize($serialize, ['allowed_classes' => false]);
 
 		if (! is_array($arr)) {
 			return [];
